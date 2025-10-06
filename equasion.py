@@ -1,11 +1,14 @@
 import math
+print("Welcome! Let's solve a quadratic equation together :)")
 
 print("Program solves the equasion: ax² + bx + c = 0")
 print("Please, input integer coefficients")
 a = int(input("Enter coefficient a: "))
 b = int(input("Enter coefficient b: "))
 c = int(input("Enter coefficient c: "))
-
+if a == 0:
+    print("This is not a quadratic equation (a cannot be 0).")
+    exit()
 D = b**2 - 4*a*c
 sqrt_D = math.sqrt(abs(D))
 
